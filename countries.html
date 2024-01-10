@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random countries</title>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #all-country {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .countryStyle,
+        .country-details {
+            border: 2px solid purple;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .country-details {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #details-btn {
+            background-color: purple;
+            color: white;
+            padding: 2px 7px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>All country name</h2>
+    <div  id="country-details">
+    </div>
+    <div id="all-country">
+
+    </div>
+    <!-- script -->
+    <script src="js fiels/countries.js"></script>
+</body>
+
+</html>
